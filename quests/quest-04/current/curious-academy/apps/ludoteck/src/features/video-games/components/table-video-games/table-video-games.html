@@ -1,0 +1,26 @@
+<thead>{{title()}}</thead>
+
+<table>
+    <thead>
+        <tr>
+            <th>Label</th>
+            <th>Année</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of items(); track item.label) {
+        <tr>
+            <td>
+                {{item.label}}
+            </td>
+            <td>
+                {{item.year}}
+            </td>
+            <td>
+                <button (click)="clickToRemoveOneElementParentSpecific(item)">X</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

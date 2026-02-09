@@ -1,0 +1,14 @@
+table {
+    background-color: orange;
+}
+
+table thead {
+    background-color: blue;
+    color: white;
+}
+
+table td {
+    background-color: grey;
+    color: white;
+    padding: 1em;
+}
