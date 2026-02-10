@@ -22,6 +22,7 @@
           }
         ],
         "styles": [
+          "node_modules/@angular/material/prebuilt-themes/cyan-orange.css",
           "apps/ludoteck/src/styles.css",
           "apps/ludoteck/src/styles-bis.css"
         ]
