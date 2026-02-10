@@ -25,8 +25,7 @@
           "node_modules/bootstrap/dist/css/bootstrap.min.css",
           "apps/ludoteck/src/styles.css",
           "apps/ludoteck/src/styles-bis.css"
-        ]
-        ,
+        ],
         "scripts": [
           "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
         ]
