@@ -17,7 +17,7 @@ export class FiltersVideoGames implements OnInit, OnDestroy {
 
   people$: Observable<Person[]> = this.peopleService.getAll().pipe(
     filter(items => items.length > 0),
-    tap(items => console.info(items))
+    // tap(items => console.info(items))
   );
 
   people$$ = toSignal(this.people$); // on ne le voit pas mais appel via un effect, et donc appel du subscribe dans cet effect
@@ -25,7 +25,7 @@ export class FiltersVideoGames implements OnInit, OnDestroy {
   ngOnInit(): void {
     const currentSubscription = this.people$.subscribe({
       next: items => {
-        console.info(items)
+        // console.info(items)
       }
     })
     this.subcription.add(currentSubscription);

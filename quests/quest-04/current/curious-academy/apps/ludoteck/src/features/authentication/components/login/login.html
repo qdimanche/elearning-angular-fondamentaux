@@ -1,0 +1,8 @@
+<form #loginForm="ngForm" (ngSubmit)="save()">
+    <label for="nickName">Surnom</label>
+    <input id="nickName" name="nickName" required type="text" [(ngModel)]="user.nickName" />
+
+    <label for="password">Mot de passe</label>
+    <input id="password" name="password" required type="password" [(ngModel)]="user.password" />
+    <button [disabled]="!loginForm.form.valid" type="submit">Se connecter</button>
+</form>

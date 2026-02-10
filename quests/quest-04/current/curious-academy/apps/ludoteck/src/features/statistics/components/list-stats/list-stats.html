@@ -1,0 +1,12 @@
+@let statitics = stats$ | async;
+@let colorTitle = colorTitle$ | async;
+
+<h2 [style.color]="colorTitle">{{ title$ | async }}</h2>
+
+@for (item of statitics; track item) {
+<div>
+    <p>Année : {{ item.year }}</p>
+    <p>Nombre de succès : {{ item.nbSuccess }}</p>
+    <p>Nombre d'échecs : {{ item.nbFailures }}</p>
+</div>
+}
